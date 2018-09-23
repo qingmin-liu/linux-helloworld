@@ -4,6 +4,7 @@
 
 obj-m := hello.o
 
+ARCH ?= $(shell arch)
 SRC := $(shell pwd)
 KERNEL_SRC := /lib/modules/$(shell uname -r)/build
 
